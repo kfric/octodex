@@ -1,12 +1,55 @@
 :root {
   font: 16px / 1 sans-serif;
 }
-
+* {
+  padding: 0;
+}
 html {
   height: 100%;
 }
-
 body {
   margin: 0;
   min-height: 100%;
+  background-color: #fafbfc;
+}
+header {
+  position: fixed;
+  opacity: 75%;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  background-color: white;
+}
+.logo {
+  border: none;
+}
+nav {
+  display: flex;
+}
+ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  font-size: xx-small;
+  margin: 1px;
+}
+a {
+  text-decoration: none;
+  color: black;
+  margin: 2px;
+}
+section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 3rem 0 0 0;
+}
+img {
+  border: solid 1px;
+  border-radius: 5px;
+  background-color: white;
+}
+article {
+  margin: 1rem;
 }
