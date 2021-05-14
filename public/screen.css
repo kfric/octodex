@@ -14,42 +14,88 @@ body {
 }
 header {
   position: fixed;
-  opacity: 75%;
   top: 0;
   width: 100%;
   display: flex;
-  justify-content: space-around;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.466)
+  justify-content: space-between;
+  border-bottom: 0.5px solid grey;
 }
-.logo {
-  border: none;
+.oct a {
+  font-weight: bold;
 }
 nav {
   display: flex;
+  padding-left: 1rem;
+  padding-right: 0;
+}
+.test {
+  display: flex;
+  margin-left: auto;
 }
 ul {
   list-style: none;
   display: flex;
   align-items: center;
-  font-size: xx-small;
-  margin: 1px;
+  justify-content: space-between;
+  font-size: x-small;
 }
 a {
   text-decoration: none;
   color: black;
   margin: 2px;
 }
+nav ul li a:hover {
+  text-decoration: underline !important;
+}
+.catName:hover {
+  text-decoration: underline;
+  color: blue;
+}
 section {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   margin: 3rem 0 0 0;
+  padding: 2rem;
 }
-img {
-  border: solid 1px;
+.cat{
+  padding: 5px;
+  border: solid 1px rgba(128, 128, 128, 0.212);
   border-radius: 5px;
-  background-color: white;
 }
+
 article {
   margin: 1rem;
+}
+footer {
+  font-size: x-small;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  background-color: white;
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 1rem;
+  display: flex;
+  justify-content: flex-start;
+  border-top: 0.5px solid grey;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+/* need to make github.com link visible */
+@media all and (max-width: 737px) {
+  .github {
+    visibility: hidden;
+  }
+  footer {
+    display: flex;
+    justify-content: center;
+  }
+  .test {
+    margin-right: -70px;
+  }
+  li {
+    font-size: small;
+  }
 }
