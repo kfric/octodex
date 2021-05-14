@@ -17,17 +17,21 @@ header {
   top: 0;
   width: 100%;
   display: flex;
-  background-color: rgba(255, 255, 255, 0.466)
   justify-content: space-between;
-  border-bottom: 0.5px solid grey;
+  background-color: rgba(255, 255, 255, 0.6);
+  border-bottom: rgba(128, 128, 128, 0.6) 1px solid;
 }
 .oct a {
   font-weight: bold;
 }
 nav {
   display: flex;
+}
+.navRight {
+  padding-right: 1rem;
+}
+.navLeft {
   padding-left: 1rem;
-  padding-right: 0;
 }
 .test {
   display: flex;
@@ -59,19 +63,17 @@ section {
   margin: 3rem 0 0 0;
   padding: 2rem;
 }
-.cat{
+.cat {
   padding: 5px;
   border: solid 1px rgba(128, 128, 128, 0.212);
   border-radius: 5px;
 }
-
 article {
   margin: 1rem;
 }
 footer {
   font-size: x-small;
   bottom: 0;
-  width: 100%;
   display: flex;
   background-color: white;
   display: flex;
